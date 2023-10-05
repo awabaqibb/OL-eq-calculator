@@ -3,19 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grade Calculator</title>
+    <title>AL Equivalator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <h1>O Level Equivalence Calculator</h1>
+      <h1>A Level Equivalence Calculator</h1>
       <h2 style="text-align: center">
         <a
-          href="https://ibcc.edu.pk/wp-content/uploads/2023/08/O-Levels.pdf"
+          href="https://ibcc.edu.pk/wp-content/uploads/2023/08/A-Level-.pdf"
           target="_blank"
-          >Updated as per 2023 boundaries</a
-        >
+          >Calculate your OL Equivalence first!
+        </a>
+        👇
       </h2>
+
+      <div class="form-group">
+        <label for="totalMarks">Enter Total Marks (out of 800):</label>
+        <input type="number" id="totalMarks" min="0" max="800" required />
+      </div>
 
       <form id="gradeForm">
         <!-- Container to dynamically generate radio buttons for subjects -->
@@ -25,8 +31,8 @@
       </form>
 
       <div class="result" id="result">
-        <p>Total Marks: <span id="totalGrade"></span>/800</p>
-        <p>Equivalence: <span id="percentage"></span>%</p>
+        <p>Total Marks: <span id="totalGrade"></span>/1100</p>
+        <p>O+A Level Equivalence: <span id="percentage"></span>%</p>
       </div>
     </div>
 
