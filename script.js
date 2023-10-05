@@ -1,7 +1,7 @@
 // Define an object to map grades to their values
 const gradeValues = {
   "A*": 94,
-  A: 95,
+  A: 85,
   B: 75,
   C: 65,
   D: 55,
