@@ -1,7 +1,7 @@
 // Define an object to map grades to their values
 const gradeValues = {
   "A*": 94,
-  A: 85,
+  A: 95,
   B: 75,
   C: 65,
   D: 55,
@@ -10,13 +10,28 @@ const gradeValues = {
 
 // Define an object to specify custom marks for certain subjects and grades
 const customMarks = {
-  Physics: {
+  Maths: {
     "A*": 95,
+  },
+  Islamiat: {
+    "A*": 95,
+  },
+  Urdu: {
+    "A*": 93,
   },
 };
 
 // Define an array of subject names
-const subjects = ["Optional#1", "Optional#2", "Optional#3"];
+const subjects = [
+  "Maths",
+  "English",
+  "Urdu",
+  "Pak Std",
+  "Islamiat",
+  "Optional#1",
+  "Optional#2",
+  "Optional#3",
+];
 
 // Function to generate radio buttons for subjects
 function generateSubjectRadios() {
@@ -84,20 +99,11 @@ function calculateGrades() {
     subjectValues.push(value);
   }
 
-  // Get the total marks entered by the user
-  const totalMarksInput = document.getElementById("totalMarks");
-  const totalMarks = parseInt(totalMarksInput.value) || 0; // Default to 0 if input is empty or not a number
-
-  // Calculate the sum of grades and add totalMarks
-  const totalGrade =
-    subjectValues.reduce((acc, value) => acc + value, 0) + totalMarks;
+  // Calculate the sum of grades
+  const totalGrade = subjectValues.reduce((acc, value) => acc + value, 0);
 
   // Calculate the percentage
-<<<<<<< HEAD
   const percentage = (totalGrade / 800) * 100;
-=======
-  const percentage = (totalGrade / 1100) * 100;
->>>>>>> 54d34c1234968fe82ea1061fbf10013115771748
 
   // Display the results
   totalGradeSpan.textContent = totalGrade;
