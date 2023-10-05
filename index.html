@@ -9,7 +9,14 @@
   <body>
     <div class="container">
       <h1>O Level Equivalence Calculator</h1>
-      <h2>Grades: A* to E</h2>
+      <h2 style="text-align: center">
+        <a
+          href="https://ibcc.edu.pk/wp-content/uploads/2023/08/O-Levels.pdf"
+          target="_blank"
+          >Updated as per 2023 boundaries</a
+        >
+      </h2>
+
       <form id="gradeForm">
         <!-- Container to dynamically generate radio buttons for subjects -->
         <div id="subjectRadios"></div>
@@ -18,8 +25,8 @@
       </form>
 
       <div class="result" id="result">
-        <p>Total Grade: <span id="totalGrade"></span></p>
-        <p>Percentage: <span id="percentage"></span>%</p>
+        <p>Total Marks: <span id="totalGrade"></span>/800</p>
+        <p>Equivalence: <span id="percentage"></span>%</p>
       </div>
     </div>
 
