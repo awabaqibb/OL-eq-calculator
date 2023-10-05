@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>O Level Equivalence Calculator</h1>
+      <h2>Grades: A* to E</h2>
+      <form id="gradeForm">
+        <!-- Container to dynamically generate radio buttons for subjects -->
+        <div id="subjectRadios"></div>
+
+        <button type="button" onclick="calculateGrades()">Calculate</button>
+      </form>
+
+      <div class="result" id="result">
+        <p>Total Grade: <span id="totalGrade"></span></p>
+        <p>Percentage: <span id="percentage"></span>%</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
