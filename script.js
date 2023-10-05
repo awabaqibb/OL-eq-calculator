@@ -1,7 +1,7 @@
 // Define an object to map grades to their values
 const gradeValues = {
   "A*": 94,
-  A: 95,
+  A: 85,
   B: 75,
   C: 65,
   D: 55,
@@ -103,10 +103,7 @@ function calculateGrades() {
   const totalGrade = subjectValues.reduce((acc, value) => acc + value, 0);
 
   // Calculate the percentage
-  const maxTotal =
-    Object.values(gradeValues).reduce((acc, value) => acc + value, 0) *
-    subjects.length;
-  const percentage = (totalGrade / maxTotal) * 100;
+  const percentage = (totalGrade / 800) * 100;
 
   // Display the results
   totalGradeSpan.textContent = totalGrade;
