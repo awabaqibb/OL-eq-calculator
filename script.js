@@ -11,10 +11,10 @@ const gradeValues = {
 // Define an object to specify custom marks for certain subjects and grades
 const customMarks = {
   Maths: {
-    "A*": 95,
+    "A*": 94,
   },
   Islamiat: {
-    "A*": 95,
+    "A*": 94,
   },
   Urdu: {
     "A*": 93,
